@@ -61,6 +61,9 @@ ol {
 .link:hover,
 .link:focus {
   color: var(--accent-color);
+  /* 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current-link {
@@ -84,11 +87,17 @@ ol {
 .current-link:hover,
 .current-link:focus {
   color: var(--secondary-bg-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current-link:hover::after,
 .current-link:focus::after {
   background-color: var(--secondary-bg-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* button */
@@ -122,12 +131,18 @@ ol {
 .btn-primary:hover,
 .btn-primary:focus {
   color: var(--text-secondary-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -178,6 +193,9 @@ body {
 .social-link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -------------------------------------------------------------------- */
@@ -280,6 +298,9 @@ body {
 .contacts a:hover,
 .contacts a:focus {
   color: var(--accent-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -----------------------BODY_INDEX----------------------- */
@@ -405,9 +426,12 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
+  height: 70px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  text-align: center;
   background: rgba(47, 48, 58, 0.8);
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -465,6 +489,7 @@ body {
 
   color: var(--text-secondary-color);
 
+  text-transform: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -518,10 +543,15 @@ body {
 .social-link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ----------------------PARTNER----------------------- */
 .partner-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -566,6 +596,9 @@ body {
   color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: 1px solid var(--accent-color);
+
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----------MODAL WINDOW ---------------*/
@@ -622,6 +655,9 @@ body {
 
 .modal-btn:hover .modal-icon {
   fill: var(--accent-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon {
@@ -731,6 +767,7 @@ body {
 
   color: var(--text-secondary-color);
 
+  text-transform: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -783,9 +820,12 @@ body {
   color: var(--primary-white-color);
 }
 
-.footer-contacts .contact:hover,
+.footer-contacts .link:hover,
 .footer-contacts .contact:focus {
   color: var(--accent-color);
+
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ------social network */
 .follow-us-box {
@@ -835,4 +875,7 @@ body {
 .follow-link:hover,
 .follow-link:focus {
   background-color: var(--accent-color);
+
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
