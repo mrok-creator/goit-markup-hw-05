@@ -196,6 +196,13 @@ body {
 /* --------------HEADER-------------------- */
 /* header flexbox */
 .header {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: var(--primary-white-color);
   border-bottom: 1px solid var(--border-color);
 }
 
